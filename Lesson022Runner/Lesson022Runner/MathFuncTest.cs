@@ -10,14 +10,14 @@ namespace Lesson022Runner
     [TestFixture]
     public class MathFuncTest
     {
+        MathFunc mathFunc = new MathFunc();
+
         [Test]
         public void MultiplyTest() //Method
         {
             int a = 1;
             int b = 2;
             int expRes = 2;
-            MathFunc mathFunc = new MathFunc(); //Variable
-           
             Assert.AreEqual(expRes, mathFunc.Multi(a, b));
 
         }
@@ -28,8 +28,6 @@ namespace Lesson022Runner
             int a = 3;
             int b = 3;
             int expRes = 6;
-            MathFunc mathFunc = new MathFunc();
-
             Assert.AreEqual(expRes, mathFunc.Addition(a, b));
 
         }
@@ -39,8 +37,6 @@ namespace Lesson022Runner
             int a = 3;
             int b = 3;
             int expRes = 1;
-            MathFunc mathFunc = new MathFunc();
-
             Assert.AreEqual(expRes, mathFunc.Division(a, b));
 
         }
@@ -50,11 +46,66 @@ namespace Lesson022Runner
             int a = 3;
             int b = 3;
             int expRes = 0;
-            MathFunc mathFunc = new MathFunc();
-
             Assert.AreEqual(expRes, mathFunc.Subtraction(a, b));
 
         }
-    }
 
+        [Test]
+        public void MaxInt()
+        {
+            int a = 3;
+            int b = 7;
+            int expRes = 7;
+            Assert.AreEqual(expRes, mathFunc.Max(a, b));
+
+        }
+
+        [Test]
+        public void FloorValue()
+        {
+            decimal a = 3.8m;
+            int expRes = 3;
+            Assert.AreEqual(expRes, mathFunc.FloorValue(a));
+
+        }
+
+        [Test]
+        public void FloorValueNotEqual()
+        {
+            decimal a = 3.8m;
+            int expRes = 4;
+            Assert.AreNotEqual(expRes, mathFunc.FloorValue(a));
+
+        }
+
+        [Test]
+        public void RoundValue()
+        {
+            decimal a = 3.8m;
+            int expRes = 4;
+            Assert.AreEqual(expRes, mathFunc.RoundValue(a));
+
+        }
+
+        [Test]
+        public void RoundValueNotEqual()
+        {
+            decimal a = 306.49m;
+            int expRes = 307;
+            Assert.AreNotEqual(expRes, mathFunc.RoundValuePass(a));
+
+        }
+        
+     //   [Test]
+     //   public void RoundValuePass()
+      //  {
+          //  int a = 306;
+           // int b = 309;
+           // bool expRes = ;
+          //  Assert.Pass(expRes, mathFunc.RoundValuePass(a, b));
+
+       // }
+
+
+    }
 }
