@@ -9,8 +9,7 @@ namespace Lesson022Runner
     class Menu
     {
 
-        public static void FirstMenu() { 
-        
+       public static void FirstMenu() { 
 
         beg_input:
 
@@ -29,36 +28,92 @@ namespace Lesson022Runner
 
             if (fromMenu == "Q" || fromMenu == "q")
             {
-                return;
+                Environment.Exit(0);
             }
-
+           
             double menuValue = Convert.ToDouble(fromMenu);
-
 
             if (menuValue == 1)
             {
-                CircleArea.CalculateBigger();
+                Console.WriteLine("Calculate the bigger circle area with using radius");
+                Console.WriteLine("--------------------------------------------------");
+
+                Console.WriteLine("Enter radius for first circle");
+                string r1 = Console.ReadLine();
+                double radius1 = Convert.ToDouble(r1);
+
+                Console.WriteLine("Enter radius for second circle");
+                string r2 = Console.ReadLine();
+                double radius2 = Convert.ToDouble(r2);
+               
+                CircleArea.CalculateBigger(radius1, radius2);
                 Console.ReadLine();
             }
 
             else if (menuValue == 2)
             {
-                Triangle.CalculateTriangle();
+                Console.WriteLine("Check that  triangle is right-angled");
+                Console.WriteLine("------------------------------------");
+
+                Console.WriteLine("Enter catet a");
+                string a = Console.ReadLine();
+                double cateta = Convert.ToDouble(a);
+
+                Console.WriteLine("Enter catet b");
+                string b = Console.ReadLine();
+                double catetb = Convert.ToDouble(b);
+
+                Console.WriteLine("Enter catet c");
+                string c = Console.ReadLine();
+                double catetc = Convert.ToDouble(c);
+
+
+                Triangle.CalculateTriangle(cateta, catetb, catetc);
                 Console.ReadLine();
             }
 
             else if (menuValue == 3)
             {
-                CircleRadius.Calculation();
-                Console.ReadLine();
-            }
+                Console.WriteLine(" Calculation circle area");
+                Console.WriteLine("------------------------");
+                Console.WriteLine("Input radius");
+
+                string a = Console.ReadLine();
+
+                //Regex reg = new Regex("[0-9].*$");
+                // if (!reg.IsMatch(a))
+                //{ }
+
+                double radius = Convert.ToDouble(a);
+                Console.WriteLine(CircleRadius.Calculation(radius));
+                Console.ReadLine();                
+            } 
 
             else if (menuValue == 4)
             {
-                WhatIsBigger.FindBigger();
+
+                Console.WriteLine("Deffining the bigger number");
+                Console.WriteLine("---------------------------");
+
+                Console.WriteLine("Enter number a");
+                string a = Console.ReadLine();
+                double val1 = Convert.ToDouble(a);
+
+                Console.WriteLine("Enter number b");
+                string b = Console.ReadLine();
+                double val2 = Convert.ToDouble(b);
+                
+
+                WhatIsBigger.FindBigger(val1, val2);
                 Console.ReadLine();
             }
 
+            else
+            {
+                Console.WriteLine("Wrong number. Please enter from 1 to 4");
+                Console.ReadLine();
+                
+            }
             goto beg_input;
                 
         }

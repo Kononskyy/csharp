@@ -8,36 +8,28 @@ namespace Lesson022Runner
 {
     class WhatIsBigger
     {
-        public static void FindBigger()
+        public static int FindBigger(double val1, double val2)
         {
-
-            Console.WriteLine("Deffining the bigger number");
-            Console.WriteLine("---------------------------");
-
-            Console.WriteLine("Enter number a");
-            string a = Console.ReadLine();
-            double val1 = Convert.ToDouble(a);
-
-            Console.WriteLine("Enter number b");
-            string b = Console.ReadLine();
-            double val2 = Convert.ToDouble(b);
-
             if (val1 > val2)
             {
                 Console.WriteLine("Number a is bigger");
-
+                return 1;
             }
-            else if (val1 == val2)
-            {
-                Console.WriteLine("Numbers are eaqual");
-            }
+            
             else if (val1 < val2)
+
             {
                 Console.WriteLine("Number b is bigger");
+                return 2;
             }
-           
-         }
 
-
+            else
+            {
+                Console.WriteLine("Numbers are eaqual");
+                return 0;
+            }
+                       
+          }
+        
       }
 }

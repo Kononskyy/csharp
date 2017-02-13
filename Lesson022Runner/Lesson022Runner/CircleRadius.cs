@@ -11,27 +11,16 @@ namespace Lesson022Runner
     {
         public const double PI = 3.14;
 
-        static double radius, circleArea;
+        //static double circleArea;
 
-        public static void Calculation()
+        public static double Calculation(double radius)
         {
-            Console.WriteLine(" Calculation circle area");
-            Console.WriteLine("------------------------");
-            Console.WriteLine("Input radius");
+                  
+            double circleArea = PI * radius * radius;
+            //Console.WriteLine(circleArea);
+            //Console.ReadLine();
+            return circleArea;
 
-            string a = Console.ReadLine();
-            
-            //Regex reg = new Regex("[0-9].*$");
-           // if (!reg.IsMatch(a))
-            //{
-
-           // }
-
-            radius = Convert.ToDouble(a);
-            
-            circleArea = PI * radius * radius;
-            Console.WriteLine("Area is " + circleArea);
-            Console.ReadLine();
-        }
-    }
+            }
+    } 
 }

@@ -56,6 +56,7 @@
     <Compile Include="PrimitiveConvertor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\CircleRadiusTest.cs" />
     <Compile Include="Triangle.cs" />
     <Compile Include="WhatIsBigger.cs" />
   </ItemGroup>
