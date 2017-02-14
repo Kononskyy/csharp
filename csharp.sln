@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson022Runner", "Lesson022Runner\Lesson022Runner.csproj", "{F85B8F83-326D-421A-9F6C-F05631A5B28E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "csharp\csharp.csproj", "{93C5F325-0568-44AB-BB57-9307FCA69591}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F85B8F83-326D-421A-9F6C-F05631A5B28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F85B8F83-326D-421A-9F6C-F05631A5B28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F85B8F83-326D-421A-9F6C-F05631A5B28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F85B8F83-326D-421A-9F6C-F05631A5B28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C5F325-0568-44AB-BB57-9307FCA69591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C5F325-0568-44AB-BB57-9307FCA69591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C5F325-0568-44AB-BB57-9307FCA69591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C5F325-0568-44AB-BB57-9307FCA69591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
