@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="main\classwork\lesson03\MathFunc.cs" />
+    <Compile Include="main\classwork\lesson04\CircleArea.cs" />
+    <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
+    <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
+    <Compile Include="main\classwork\lesson04\Triangle.cs" />
+    <Compile Include="main\homework\lesson02\PrimitiveConvertor.cs" />
+    <Compile Include="main\homework\lesson04\WhatIsBigger.cs" />
+    <Compile Include="main\menus\Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test\classwork\lesson03\MathFuncTest.cs" />
+    <Compile Include="test\homework\CircleRadiusTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="main\classwork\lesson02\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
