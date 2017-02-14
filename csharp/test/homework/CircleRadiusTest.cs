@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson022Runner
+namespace csharp
 {
     [TestFixture]
     public class CircleRadiusTest
