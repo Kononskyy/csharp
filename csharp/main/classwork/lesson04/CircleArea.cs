@@ -29,11 +29,19 @@ namespace csharp
                 return 2;
             }
 
-            else 
+            else if (area1 == area2 && area1 > 0 && area2 > 0)
             {
                 Console.WriteLine("Circle1 area is equal to Circle2 area");
                 return 0;
             }
+
+            else
+            {
+                Console.WriteLine("Please, input valid date");
+                return 3;
+
+            }
+
             
                         
         }
