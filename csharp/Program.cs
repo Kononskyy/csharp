@@ -1,4 +1,6 @@
-﻿using System;
+﻿using csharp.main.classwork.lesson06;
+using csharp.main.homework.lesson06;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +12,15 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            
-            Menu.FirstMenu();
+
+            LoopsHome.LoopHome();
             Console.ReadLine();
+
+            //Loop.LoopFirst();
+            //Console.ReadLine();
+
+            //Menu.FirstMenu();
+            //Console.ReadLine();
 
             //WhatIsBigger.FindBigger();
             //Console.ReadLine();

@@ -8,86 +8,121 @@ using System.Threading.Tasks;
 namespace csharp
 {
     [TestFixture]
-    public class MathFuncTest
+    class MathFuncTest
     {
-        MathFunc mathFunc = new MathFunc();
+        MathFunc mathFunc;
+    
 
-        [Test]
-        public void MultiplyTest() //Method
+    [OneTimeSetUp]
+    public void OneTimeSetUp()
+    {
+        mathFunc = new MathFunc();
+    }
+
+    static object[][] multiplyData = {
+        new object[] {  12, 3, 36, true},
+        new object[] {  12, 2, 24, true},
+        new object[] {  12, 3, 25, false}
+    };
+        static object[][] addition = {
+        new object[] {  12, 3, 15, true},
+        new object[] {  12, 2, 14, true},
+        new object[] {  12, 3, 16, false}
+    };
+        static object[][] division = {
+        new object[] {  12, 3, 4, true},
+        new object[] {  12, 2, 6, true},
+        new object[] {  12, 3, 16, false}
+    };
+        static object[][] subtraction = {
+        new object[] {  55, 10, 45, true},
+        new object[] {  66, 33, 33, true},
+        new object[] {  77, 7, 76, false}
+    };
+        static object[][] maxIntData = {
+        new object[] {  55, 10, 55, true},
+        new object[] {  66, 33, 66, true},
+        new object[] {  77, 7, 76, false}
+    };
+
+        static object[][] floorValueData = {
+        new object[] {  55.99m, 55, true},
+        new object[] {  66.123m, 66, true},
+        new object[] {  77.444m, 76, false}
+    };
+
+        [Test, TestCaseSource("multiplyData")]
+        public void MultiplyTest(int a, int b, int expRes, bool boolResult) //Method
         {
-            int a = 1;
-            int b = 2;
-            int expRes = 2;
-            Assert.AreEqual(expRes, mathFunc.Multi(a, b));
+            
+            Assert.AreEqual(boolResult, expRes == mathFunc.Multi(a, b));
+
+        }
+        
+
+        [Test, TestCaseSource("addition")]
+        public void Addition(int a, int b, int expRes, bool boolResult)
+        {
+            
+            Assert.AreEqual(boolResult, expRes == mathFunc.Addition(a, b));
+
+        }
+        
+        [Test, TestCaseSource("division")]
+        public void Division(int a, int b, int expRes, bool boolResult)
+        {
+           
+            Assert.AreEqual(boolResult, expRes == mathFunc.Division(a, b));
 
         }
 
-        [Test]
-        public void MultiplyTest1()
+        
+        [Test, TestCaseSource("subtraction")]
+        public void Subtraction(int a, int b, int expRes, bool boolResult)
         {
-            int a = 3;
-            int b = 3;
-            int expRes = 6;
-            Assert.AreEqual(expRes, mathFunc.Addition(a, b));
+            
+            Assert.AreEqual(boolResult, expRes == mathFunc.Subtraction(a, b));
 
         }
-        [Test]
-        public void MultiplyTest2()
+        
+        [Test, TestCaseSource("maxIntData")]
+        public void MaxInt(int a, int b, int expRes, bool boolResult)
         {
-            int a = 3;
-            int b = 3;
-            int expRes = 1;
-            Assert.AreEqual(expRes, mathFunc.Division(a, b));
-
-        }
-        [Test]
-        public void MultiplyTest3()
-        {
-            int a = 3;
-            int b = 3;
-            int expRes = 0;
-            Assert.AreEqual(expRes, mathFunc.Subtraction(a, b));
+           
+            Assert.AreEqual(boolResult, expRes == mathFunc.Max(a, b));
 
         }
 
-        [Test]
-        public void MaxInt()
+        
+
+        [Test, TestCaseSource("floorValueData")]
+        public void FloorValue(decimal a, int expRes, bool boolResult)
         {
-            int a = 3;
-            int b = 7;
-            int expRes = 7;
-            Assert.AreEqual(expRes, mathFunc.Max(a, b));
+            
+            Assert.AreEqual(boolResult, expRes == mathFunc.FloorValue(a));
 
         }
 
-        [Test]
-        public void FloorValue()
-        {
-            decimal a = 3.8m;
-            int expRes = 3;
-            Assert.AreEqual(expRes, mathFunc.FloorValue(a));
-
-        }
-
-        [Test]
+        /*
+        [Test, TestCaseSource("floorValueNotEqualData")]
         public void FloorValueNotEqual()
         {
-            decimal a = 3.8m;
-            int expRes = 4;
+            //decimal a = 3.8m;
+            //int expRes = 4;
             Assert.AreNotEqual(expRes, mathFunc.FloorValue(a));
 
         }
 
-        [Test]
+        [Test, TestCaseSource("roundValueData")]
         public void RoundValue()
         {
-            decimal a = 3.8m;
-            int expRes = 4;
+            //decimal a = 3.8m;
+            //int expRes = 4;
             Assert.AreEqual(expRes, mathFunc.RoundValue(a));
 
         }
 
-        [Test]
+        [Test, TestCaseSource("roundValueNotEqualData")]
         public void RoundValueNotEqual()
         {
             decimal a = 306.49m;
@@ -105,7 +140,7 @@ namespace csharp
           //  Assert.Pass(expRes, mathFunc.RoundValuePass(a, b));
 
        // }
-
+       */
 
     }
 }

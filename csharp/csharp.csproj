@@ -52,6 +52,10 @@
     <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
     <Compile Include="main\classwork\lesson04\Triangle.cs" />
+    <Compile Include="main\classwork\lesson06\Loop.cs" />
+    <Compile Include="main\homework\lesson06\int32.cs" />
+    <Compile Include="main\homework\lesson06\LoopsHome.cs" />
+    <Compile Include="test\classwork\lesson05\ParametrizedTests.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvertor.cs" />
     <Compile Include="main\homework\lesson04\WhatIsBigger.cs" />
     <Compile Include="main\menus\Menu.cs" />
@@ -72,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="main\classwork\lesson02\" />
+    <Folder Include="main\classwork\lesson05\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
