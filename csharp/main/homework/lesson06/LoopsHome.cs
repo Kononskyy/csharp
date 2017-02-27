@@ -24,8 +24,8 @@ namespace csharp.main.homework.lesson06
 
             }
 
-
-            for (int j = 1; j <= 20; j += 1)
+            
+            for (int j = 2; j <= 20; j += 2)
             {
 
                 int[] b = new int[20];

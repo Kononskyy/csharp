@@ -52,6 +52,7 @@
     <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
     <Compile Include="main\classwork\lesson04\Triangle.cs" />
+    <Compile Include="main\classwork\lesson06\Array.cs" />
     <Compile Include="main\classwork\lesson06\Loop.cs" />
     <Compile Include="main\homework\lesson06\int32.cs" />
     <Compile Include="main\homework\lesson06\LoopsHome.cs" />
