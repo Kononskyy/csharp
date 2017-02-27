@@ -53,7 +53,7 @@ namespace csharp.main.classwork.lesson06
             intArray[0] = new int[3];
             intArray[1] = new int[3];
             */
-
+           
             int[][] intArray = new int[2][];
             for (int i = 0; i < intArray.Length; i++)
             {
@@ -64,18 +64,18 @@ namespace csharp.main.classwork.lesson06
             {
                 for (int k = 0; k < intArray[j].Length; k++)
                 {
-                    intArray[j][k] = (j+1) * (k+1);
+                    intArray[j][k] = (j + 1) * (k + 1);
                     Console.Write(intArray[j][k] + " ");
                 }
                 Console.WriteLine();
             }
             Console.ReadLine();
         }
-       // public void Multi()
-        //{
 
-       // }
-     }
+        
+    }
+
+   
 
 }
     

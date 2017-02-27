@@ -10,56 +10,82 @@ namespace csharp.main.homework.lesson06
     {
         public static void LoopHome()
         {
-            /*for (int i = 2; i <= 20; i += 2)
-            {
-                Console.WriteLine(i + "\n");
-            }
-            */
             /*
+              //vivod v stroku
+            int[] mass = new int[10];
+            int j = 0;
             for (int i = 2; i <= 20; i += 2)
             {
-                int[] a = new int[20];
-                a[i - 1] = i;
-                Console.WriteLine(a[i - 1] + "\n");
+                mass[j] = i;
+                Console.Write(mass[j] + " ");
 
             }
-
-            
-            for (int j = 2; j <= 20; j += 2)
+            Console.ReadLine();
+            */
+            /*
+            //vivod v stolbec
+            int[] mass2 = new int[10];
+            int k = 0;
+            for (int i = 2; i <= 20; i += 2)
             {
-
-                int[] b = new int[20];
-                b[j - 1] = j;
-                Console.Write(b[j - 1] + " ");
+                mass2[k] = i;
+                Console.WriteLine(mass2[k] + " ");
+            }
+            Console.ReadLine();
             }
             */
-            
-            for (int k = 1; k <= 99; k += 1)
+
+            int[][] odd = new int[2][];
+            for (int i = 0; i < odd.Length; i++)
             {
-                int[] c = new int[100];
-                if (k%2 != 0)
-                {
-                    c[k - 1] = k;
-                    Console.Write(c[k - 1] + " ");
-                }
-                           
-            }
-            Console.WriteLine();
-
-
-            for (int k = 99; k >= 1; k -= 1)
-            {
-                int[] c = new int[100];
-                if (k % 2 != 0)
-                {
-                    c[100 - k] = k;
-                    Console.Write(c[100 - k] + " ");
-                }
-
+                odd[i] = new int[50];
             }
 
+            for (int j = 0; j < odd.Length; j++)
+            {
+                for (int k = 0; k <= 101; k++)
+                {
+                    if (k % 2 != 0)
+                    {
+                        odd[j][k] = (1) * (k);
+                        Console.Write(odd[j][k] + " ");
+                    }
+               
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+
+            /*
+
+
+        for (int k = 1; k <= 99; k += 1)
+        {
+            int[] c = new int[100];
+            if (k%2 != 0)
+            {
+                c[k - 1] = k;
+                Console.Write(c[k - 1] + " ");
+            }
+
+        }
+        Console.WriteLine();
+
+
+        for (int k = 99; k >= 1; k -= 1)
+        {
+            int[] c = new int[100];
+            if (k % 2 != 0)
+            {
+                c[100 - k] = k;
+                Console.Write(c[100 - k] + " ");
+            }
+
+        }
+
+*/
 
 
         }
-     }
+    }
 }

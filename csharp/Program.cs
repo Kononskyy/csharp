@@ -13,11 +13,11 @@ namespace csharp
         static void Main(string[] args)
         {
 
-            main.classwork.lesson06.Array.ArrayClass();
-            Console.ReadLine();
-
-            //LoopsHome.LoopHome();
+            //main.classwork.lesson06.Array.ArrayClass();
             //Console.ReadLine();
+
+            LoopsHome.LoopHome();
+            Console.ReadLine();
 
             //Loop.LoopFirst();
             //Console.ReadLine();
