@@ -58,14 +58,14 @@ namespace csharp.main.classwork.lesson06
             for (int i = 0; i < intArray.Length; i++)
             {
                 intArray[i] = new int[3];
-            }
+            //}
 
-            for (int j = 0; j < intArray.Length; j++)
-            {
-                for (int k = 0; k < intArray[j].Length; k++)
+            //for (int j = 0; j < intArray.Length; j++)
+            //{
+                for (int k = 0; k < intArray[i].Length; k++)
                 {
-                    intArray[j][k] = (j + 1) * (k + 1);
-                    Console.Write(intArray[j][k] + " ");
+                    intArray[i][k] = (i + 1) * (k + 1);
+                    Console.Write(intArray[i][k] + " ");
                 }
                 Console.WriteLine();
             }

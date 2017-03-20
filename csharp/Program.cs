@@ -16,8 +16,18 @@ namespace csharp
             //main.classwork.lesson06.Array.ArrayClass();
             //Console.ReadLine();
 
-            LoopsHome.LoopHome();
+            //LoopsHome.LoopHome();
+            //Console.ReadLine();
+
+            //Task_2b.Task2b();
+            //Console.ReadLine();
+
+            //Task_2c.Task2c();
+            //Console.ReadLine();
+
+            Task_2e.Task2e();
             Console.ReadLine();
+
 
             //Loop.LoopFirst();
             //Console.ReadLine();
