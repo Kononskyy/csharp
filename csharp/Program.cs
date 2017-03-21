@@ -1,5 +1,6 @@
 ﻿using csharp.main.classwork.lesson06;
 using csharp.main.homework.lesson06;
+using csharp.main.menus;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace csharp
         static void Main(string[] args)
         {
 
+            MenuTasks.MenuLesson6();
+            Console.ReadLine();
             //main.classwork.lesson06.Array.ArrayClass();
             //Console.ReadLine();
 
@@ -22,14 +25,14 @@ namespace csharp
             //Task_2b.Task2b();
             //Console.ReadLine();
 
-            //Task_2c.Task2c();
+            //Task_2d.Task2d();
             //Console.ReadLine();
 
-            Task_2e.Task2e();
-            Console.ReadLine();
+            //Task_2e.Task2e();
+            //Console.ReadLine();
 
 
-            //Loop.LoopFirst();
+            //Task_2a.Task2a();
             //Console.ReadLine();
 
             //Menu.FirstMenu();
