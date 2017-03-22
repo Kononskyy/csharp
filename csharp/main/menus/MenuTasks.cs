@@ -22,6 +22,7 @@ namespace csharp.main.menus
             Console.WriteLine("* 3 - Array with 15 random numbers in range [0,9]. Finding count of odd numbers");
             Console.WriteLine("* 4 - Array with 15 random numbers in range [0,999].Finding Min and Max numbers");
             Console.WriteLine("* 5 - Two-dimensional array[8,5] with random numbers in range [10,99]");
+            Console.WriteLine("* 6 - Two-dimensional array[8,5] with random numbers in range [10,999]");
             Console.WriteLine("******************************************************************************");
             Console.WriteLine("or select Q and press Enter for exit");
 
@@ -64,10 +65,16 @@ namespace csharp.main.menus
                 Console.ReadLine();
             }
 
+            else if (menuValue == 6)
+            {
+                Task_2g.Task2g();
+                Console.ReadLine();
+            }
+
             else
             {
                 Console.WriteLine("Wrong number. Please enter from 1 to 5");
-                Console.ReadLine();
+                Console.ReadLine();                
             }
 
             goto beg_input;
