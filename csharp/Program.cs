@@ -1,5 +1,7 @@
 ﻿using csharp.main.classwork.lesson06;
+using csharp.main.classwork.lesson07;
 using csharp.main.homework.lesson06;
+using csharp.main.homework.lesson07;
 using csharp.main.menus;
 using System;
 using System.Collections.Generic;
@@ -14,71 +16,20 @@ namespace csharp
         static void Main(string[] args)
         {
 
-            MenuTasks.MenuLesson6();
+            Palindrom.Palindr();
             Console.ReadLine();
-            //main.classwork.lesson06.Array.ArrayClass();
+            //StartStr.StartString();
             //Console.ReadLine();
 
-            //LoopsHome.LoopHome();
-            //Console.ReadLine();
-
-            //Task_2b.Task2b();
-            //Console.ReadLine();
-
-            //Task_2d.Task2d();
-            //Console.ReadLine();
-
-            //Task_2e.Task2e();
-            //Console.ReadLine();
-
-
-            //Task_2a.Task2a();
-            //Console.ReadLine();
-
+            //MenuTasks.MenuLesson6();
+           // Console.ReadLine();
+            
+ 
             //Menu.FirstMenu();
             //Console.ReadLine();
+                                
 
-            //WhatIsBigger.FindBigger();
-            //Console.ReadLine();
-
-            //DefineNumber.IsEven();
-            // Console.ReadLine();
-
-            //Triangle.CalculateTriangle();
-            //Console.ReadLine();
-
-            //CircleArea.CalculateBigger();
-            // Console.ReadLine();
-
-            //CircleRadius.Calculation();
-            //Console.ReadLine();
-
-            /*
-            float inpFloat = 77.0F;
-            int inpInt = 78;
-            char inpChar = '1';
-
-
-            // Convert from float to Char
-            
-            PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();
-            primitiveConvertor.floatToChar(inpFloat);
-            Console.ReadLine();
-
-
-            // Convert from int to Char
-
-            PrimitiveConvertor primitiveConvertor2 = new PrimitiveConvertor();
-            primitiveConvertor2.intToChar(inpInt);
-            Console.ReadLine();
-
-            // Convert from char to Int
-            PrimitiveConvertor primitiveConvertor3 = new PrimitiveConvertor();
-            primitiveConvertor3.charToInt(inpChar);
-            Console.ReadLine();
-            */
-
-            //primitiveConvertor3.charToInt(inpChar);
+                                 
         }
     }
 }

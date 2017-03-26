@@ -54,12 +54,15 @@
     <Compile Include="main\classwork\lesson04\Triangle.cs" />
     <Compile Include="main\classwork\lesson06\Array.cs" />
     <Compile Include="main\classwork\lesson06\Loop.cs" />
+    <Compile Include="main\classwork\lesson07\StartStr.cs" />
     <Compile Include="main\homework\lesson06\Task_2a.cs" />
     <Compile Include="main\homework\lesson06\Task_2b.cs" />
     <Compile Include="main\homework\lesson06\Task_2c.cs" />
     <Compile Include="main\homework\lesson06\Task_2d.cs" />
     <Compile Include="main\homework\lesson06\Task_2e.cs" />
     <Compile Include="main\homework\lesson06\Task_2g.cs" />
+    <Compile Include="main\homework\lesson06\Task_2h.cs" />
+    <Compile Include="main\homework\lesson07\Palindrom.cs" />
     <Compile Include="main\menus\MenuTasks.cs" />
     <Compile Include="test\classwork\lesson05\ParametrizedTests.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvertor.cs" />
