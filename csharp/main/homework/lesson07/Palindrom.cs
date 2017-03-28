@@ -43,7 +43,7 @@ namespace csharp.main.homework.lesson07
 
             Console.WriteLine();
             string reverStr = new string(fromDisplay1.Reverse().ToArray());
-            if (fromDisplay1.ToLower() == reverStr.ToLower())
+            if (fromDisplay1.ToLower().Equals(reverStr.ToLower()))
             {
                 Console.WriteLine("String " + fromDisplay1 + " is palindrom(method2)");
                 Console.ReadLine();
@@ -69,7 +69,27 @@ namespace csharp.main.homework.lesson07
             }
             Console.WriteLine("String " + fromDisplay1 + " is palindrom(method3)");
             Console.ReadLine(); ; //если мы добрались сюда, значит палиндром
+            //***************************************************************************
 
+            int p = fromDisplay.Length-1;
+            int lenght = fromDisplay.Length;
+            for (int l = 0; l < lenght/2; l++)
+            {
+                if (fromDisplay[i] == fromDisplay[p/2])
+                {
+                    p++;
+                }
+                else
+                {
+                    Console.WriteLine("String " + fromDisplay1 + " is NOT palindrom(method4)");
+                    Console.ReadLine();
+                }
+
+                //Console.WriteLine("String " + fromDisplay1 + " is palindrom(method4)");
+                //Console.ReadLine(); ; //если мы добрались сюда, значит палиндром
+            }
+            Console.WriteLine("String " + fromDisplay1 + " is palindrom(method4)");
+            Console.ReadLine(); ; //если мы добрались сюда, значит палиндром
             goto beg_input;
         }
         
