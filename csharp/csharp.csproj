@@ -67,6 +67,7 @@
     <Compile Include="main\homework\lesson07\Palindrom.cs" />
     <Compile Include="main\homework\lesson08\Task_8a.cs" />
     <Compile Include="main\homework\lesson08\Task_8b.cs" />
+    <Compile Include="main\homework\lesson08\Task_8c.cs" />
     <Compile Include="main\menus\MenuTasks.cs" />
     <Compile Include="test\classwork\lesson05\ParametrizedTests.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvertor.cs" />

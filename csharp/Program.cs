@@ -38,7 +38,7 @@ namespace csharp
             //Task_8a.Task8a();
             //Console.ReadKey();
 
-            Task_8b.Task8b();
+            Task_8c.Task8c();
             Console.ReadKey();
 
             //Palindrom.Palindr();
