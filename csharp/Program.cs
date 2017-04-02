@@ -35,8 +35,10 @@ namespace csharp
 
             //WorkWithFile.WithFile();
             //Console.ReadLine();
+            //Task_8a.Task8a();
+            //Console.ReadKey();
 
-            Task_8a.Task8a();
+            Task_8b.Task8b();
             Console.ReadKey();
 
             //Palindrom.Palindr();

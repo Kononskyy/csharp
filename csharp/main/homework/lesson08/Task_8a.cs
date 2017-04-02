@@ -10,23 +10,28 @@ namespace csharp.main.homework.lesson08
     class Task_8a
     {
         public static void Task8a()
-        {
-            string path = "D:\\Projects\\MyTest.txt";
-            string s = " ";
-            //path = @ "D:\Projects\MyTest.txt";
-            StreamReader sr = File.OpenText(path);
-            s = sr.ReadLine();
-            char[] dam = {','};
-            String[] ss = s.Split(dam);
-            Array.Sort(ss);
-            Console.Write(ss);
-            //char[] fromString = (string)ss.ToCharArray();
+        {            
+            String input = File.ReadAllText(@"D:\Projects\MyTest1.txt");
+            System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"D:\Projects\MyTestResult.txt");
             
-            for (int i = 0; i < ss.Length; i++)
-                {               
-                    Console.WriteLine(" " + ss[i]);
-                }
-                        
+            int i = 0, j = 0;
+            int[,] result = new int[10, 10];
+            foreach (var row in input.Split('\n'))
+            {
+                j = 0;
+                foreach (var col in row.Trim().Split(','))
+                {
+                    result[i, j] = int.Parse(col.Trim());                    
+                    j++;                    
+                }                
+                i++;                
+            } 
+                     
+            textFile.Write(input + " ");
+            textFile.Close();
+            //Array.Sort(ss);
+            Console.Write(input);
+            Console.ReadLine();    
         }
     }
 }
