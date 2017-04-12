@@ -2,10 +2,13 @@
 using csharp.main.classwork.lesson07;
 using csharp.main.classwork.lesson08;
 using csharp.main.classwork.lesson09;
+using csharp.main.classwork.lesson10;
+using csharp.main.classwork.lesson11;
 using csharp.main.homework;
 using csharp.main.homework.lesson06;
 using csharp.main.homework.lesson07;
 using csharp.main.homework.lesson08;
+using csharp.main.homework.lesson09;
 using csharp.main.menus;
 using System;
 using System.Collections.Generic;
@@ -19,16 +22,42 @@ namespace csharp
     {
         static void Main(string[] args)
         {
+            Person3 person = new Person3("Ivan", 22);
+            Console.WriteLine(person.ToString());
+            Console.ReadLine();
+
+            // Pixel pixel = new Pixel(2, 5);
+            // int[] pixCoords = pixel.GetCoords();  
+            /*
+            Student2 student = new Student2("Egor", "KPI");
+            Console.WriteLine(student.GetResponse());
+
+            Teacher2 teacher = new Teacher2("Ivan", "NAU");
+            Console.WriteLine(teacher.GetResponse());
+
+            Person2 person = new Student2("Ilya", "LNU");
+            Console.WriteLine(person.GetResponse());
+
+            person = new Teacher2("Evgen", "HPI");
+            Console.WriteLine(person.GetResponse());
+
+            Console.ReadLine();
+                  */        
 
             /*
-            Student encapsul = new Student();
-            encapsul.SetAge(24);
+            NewStudent encapsul = new NewStudent("Sasha", "KPI", "Kyiv", "Fuck");
+            Console.ReadLine();
+
+            */
+            /*encapsul.SetAge(24);
             encapsul.SetResponse("Aaaaaa");
             encapsul.SetName("Nikolay");
-
-            Console.WriteLine("New student "+ encapsul.GetName() + " Age is " + encapsul.GetAge() + " His mind " + encapsul.GetResponse());
-            Console.ReadLine();
+            encapsul.("Nikolay");
             */
+
+            //Console.WriteLine("New student "+ encapsul.name + " Age is " + encapsul.GetAge() + " His mind " + encapsul.GetResponse());
+
+
             /*
 
             Console.WriteLine("Input new Name");
@@ -45,7 +74,8 @@ namespace csharp
             Console.ReadLine();
             */
 
-            NewStudent student = new NewStudent("AlarmFuck", "KPI");
+            // NewStudent student = new NewStudent("AlarmFuck", "KPI");
+            //WhiteCollar white = new WhiteCollar("Sasha", 28, "SBTech");
 
 
             //Console.WriteLine("Age is " );
@@ -88,8 +118,7 @@ namespace csharp
             //Task_8a.Task8a();
             //Console.ReadKey();
 
-            //Task_8c.Task8c();
-            //Console.ReadKey();
+
 
 
 

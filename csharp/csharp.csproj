@@ -61,6 +61,12 @@
     <Compile Include="main\classwork\lesson09\NewStudent.cs" />
     <Compile Include="main\classwork\lesson09\Person.cs" />
     <Compile Include="main\classwork\lesson09\Student.cs" />
+    <Compile Include="main\classwork\lesson10\Line.cs" />
+    <Compile Include="main\classwork\lesson10\Pixel.cs" />
+    <Compile Include="main\classwork\lesson11\Person2.cs" />
+    <Compile Include="main\classwork\lesson11\Person3.cs" />
+    <Compile Include="main\classwork\lesson11\Student2.cs" />
+    <Compile Include="main\classwork\lesson11\Teacher2.cs" />
     <Compile Include="main\homework\lesson09\Human.cs" />
     <Compile Include="main\homework\lesson06\Task_2a.cs" />
     <Compile Include="main\homework\lesson06\Task_2b.cs" />

@@ -18,6 +18,7 @@ namespace csharp.main.homework.lesson09
                 {
                     this.companyName = value;
                     Console.WriteLine("Company name is setted");
+                    Console.ReadLine();
                 }
                 else
                 {

@@ -10,17 +10,21 @@ namespace csharp.main.classwork.lesson09
     {
         private String university;
         private String response = "fuck fuck fuuuuck!";
+        
 
-        public NewStudent(String name, String university)
-            : base(name)
+        public NewStudent(String name, String university, String city, String response)
+            : base(name, city)
         {
             this.university = university;
+            Console.WriteLine( "New student name is " + name +". He is from " + city + " and will be studed in " + university + ". It will be " + response);
         }
         public String GetResponse()
         {
             Console.WriteLine("aaaaa");
             return response;
         }
+        
+
     }
    
 }
