@@ -46,7 +46,7 @@ namespace csharp.test.webdriver
            ReadOnlyCollection<IWebElement> webElents;
            webElents = driver.FindElements(By.CssSelector(".r>a"));
            Assert.True(webElents.Count > 0);           
-           Thread.Sleep(1000);
+           //Thread.Sleep(1000);
        }
       /*
     [TestFixture]

@@ -102,6 +102,8 @@
     <Compile Include="test\classwork\lesson03\MathFuncTest.cs" />
     <Compile Include="test\classwork\lesson05\TestCaseWithPreconditions.cs" />
     <Compile Include="test\homework\CircleRadiusTest.cs" />
+    <Compile Include="test\webdriver\Expirement.cs" />
+    <Compile Include="test\webdriver\FillRegistretionForm.cs" />
     <Compile Include="test\webdriver\FirstTest.cs" />
   </ItemGroup>
   <ItemGroup>
