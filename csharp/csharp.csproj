@@ -52,6 +52,10 @@
       <HintPath>..\packages\Selenium.WebDriver.3.3.0\lib\net40\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebDriver.Support, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.3.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="main\classwork\lesson03\MathFunc.cs" />
@@ -101,10 +105,12 @@
     </Compile>
     <Compile Include="test\classwork\lesson03\MathFuncTest.cs" />
     <Compile Include="test\classwork\lesson05\TestCaseWithPreconditions.cs" />
+    <Compile Include="test\classwork\lesson12\Client_IntakeForm.cs" />
     <Compile Include="test\homework\CircleRadiusTest.cs" />
     <Compile Include="test\webdriver\Expirement.cs" />
     <Compile Include="test\webdriver\FillRegistretionForm.cs" />
     <Compile Include="test\webdriver\FirstTest.cs" />
+    <Compile Include="test\webdriver\Tests\massage\MassageTherapyRegistrationSmokeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
